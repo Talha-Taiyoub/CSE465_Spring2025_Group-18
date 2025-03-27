@@ -1,4 +1,4 @@
-# Phishing Detection Project
+# Phishing Website Detection
 
 ## Team Contributions
 
@@ -34,7 +34,7 @@ These methods help to create a more diverse and comprehensive dataset for traini
 
 The final phase of this project involves the following steps:
 
+- **Fine Tune**: Fine tune the model to increase accuracy.
 - **API Development**: I'll create an API that leverages the trained model for phishing detection. This will allow users to input URLs and receive predictions regarding their legitimacy.
 - **Browser Extension**: A browser extension will be built using this API, enabling users to easily check whether a website is phishing or legitimate while browsing.
 
-These final steps will make the phishing detection model accessible and usable for a wide audience, improving web security for everyday users.
