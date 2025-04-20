@@ -1,0 +1,2 @@
+As GitHub doesn't allow uploading more than 100MB file, I couldn't upload the saved model in this repository as my saved model is 417MB.
+You can find the model clicking this link https://drive.google.com/file/d/1d8PxXpxqvhOD6axgk0RW6TstQ7DNP1eM/view?usp=sharing
