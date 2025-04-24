@@ -30,11 +30,18 @@ These methods help to create a more diverse and comprehensive dataset for traini
 | F1-Score  | 0.9666 |
 
 
-## Project Completion Plan
+## Network Architecture
 
-The final phase of this project involves the following steps:
+We used HuggingFace's `BertForSequenceClassification` model as the core of our phishing URL detection system.
 
-- **Fine Tune**: Fine tune the model to increase accuracy.
-- **API Development**: I'll create an API that leverages the trained model for phishing detection. This will allow users to input URLs and receive predictions regarding their legitimacy.
-- **Browser Extension**: A browser extension will be built using this API, enabling users to easily check whether a website is phishing or legitimate while browsing.
+![BERT Architecture](./Final/architecture.png)
+
+### Details:
+
+- **Base model**: `bert-base-uncased` (pretrained BERT with 12 transformer layers, 768 hidden size, 12 attention heads)
+- **Classification head**: A single linear layer added on top of BERT’s `[CLS]` token output, with output size = 2 (for binary classification)
+- **Activation function**: Softmax (applied during prediction for class probabilities)
+
+**Input**: Tokenized URL text  
+**Output**: Logits for two classes — `[Legitimate, Phishing]`
 
