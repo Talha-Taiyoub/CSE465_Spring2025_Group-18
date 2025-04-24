@@ -12,6 +12,7 @@ The trained model used for this project can be accessed via the following link:
 
 🔗 **[Download Trained Model (Google Drive)](https://drive.google.com/file/d/1d8PxXpxqvhOD6axgk0RW6TstQ7DNP1eM/view?usp=sharing)**
 
+The dataset was collected from **[Mendely Data](https://data.mendeley.com/datasets/vfszbj9b36/1)**
 
 ## Data Augmentation
 
