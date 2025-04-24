@@ -6,6 +6,13 @@
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | **Talha Taiyoub** | Contributed to every aspect of the project, including data preprocessing, model development, data augmentation, training, testing, and evaluation. |
 
+## Model File
+
+The trained model used for this project can be accessed via the following link:
+
+🔗 **[Download Trained Model (Google Drive)](https://drive.google.com/file/d/1d8PxXpxqvhOD6axgk0RW6TstQ7DNP1eM/view?usp=sharing)**
+
+
 ## Data Augmentation
 
 To improve the robustness of the phishing detection model, several data augmentation techniques were employed to generate diverse URL variations. These techniques include:
@@ -29,12 +36,16 @@ These methods help to create a more diverse and comprehensive dataset for traini
 | Recall    | 0.9654 |
 | F1-Score  | 0.9666 |
 
+## Confusion Matrix
+|                 | Predicted Legitimate | Predicted Phishing |
+|-----------------|----------------------|---------------------|
+| **Actual Legitimate** | 61072                 | 1165                |
+| **Actual Phishing**    | 1263                  | 35265               |
+
 
 ## Network Architecture
 
 We used HuggingFace's `BertForSequenceClassification` model as the core of our phishing URL detection system.
-
-![BERT Architecture](./Final/architecture.png)
 
 ### Details:
 
@@ -44,4 +55,4 @@ We used HuggingFace's `BertForSequenceClassification` model as the core of our p
 
 **Input**: Tokenized URL text  
 **Output**: Logits for two classes — `[Legitimate, Phishing]`
-
+![BERT Architecture](./Final/architecture.png)
